@@ -1,0 +1,29 @@
+<p>new02 works!</p>
+<h1>{{inputdata}}</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Phone</th>
+            <th>Name02</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let row of addValues">
+        <td>
+            {{row[0]}}
+        </td>
+        <td>
+            {{row[1]}}
+        </td>
+        <td>
+            {{row[2]}}
+        </td>
+        <td>
+            {{row[3]}}
+        </td>
+        </tr>
+    </tbody>
+</table>

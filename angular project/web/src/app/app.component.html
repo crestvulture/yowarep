@@ -1,0 +1,54 @@
+<!-- string interpolation -->
+<h1>{{title}}</h1>
+<!-- property Binding -->
+<p [class]="img1">image</p>
+<img [src]="img1" alt="">
+<!-- Event Binding -->
+<!-- <button (click)="clickButton()">Click</button>
+<span >{{clicked}}</span> -->
+<!-- two way Binding -->
+<input type="text" [(ngModel)]="twoWayBinding">
+<span>{{twoWayBinding}}</span>
+<!-- service dependency injection -->
+<span>{{sampleService}}</span>
+
+
+<!-- Directive -->
+<!-- structural directives -->
+<div *ngIf="hidden" >Hidden the values</div>
+<!-- <ng-container *ngFor="let data of array01">
+  <span>{{data}}</span>
+</ng-container> -->
+<!--attribute Directives-->
+template expression
+<div>{{2 + 3}}</div>
+<div>{{isError ? 'red': 'blue'}}</div>
+<p>{{13 | currency:'USD'}}</p>
+
+
+<input type="text" [(ngModel)]="adValue">
+<button (click)="clickMe()">Click</button>
+
+
+
+<div *ngIf="hidebox">
+  gashkgaskdh
+  <app-new02 [addValues]="values0"></app-new02>
+</div>
+<div *ngIf="hidebox02">
+  <input type="text" [(ngModel)]="getName" disabled="true">
+  <app-new01 (getValues)="addValues($event)"></app-new01>
+</div>
+<!-- <a routerLink="/new01" routerLinkActive="black">new01</a>
+<ng-container *ngIf="hidebox"> 
+  <a routerLink="/new02" class="black">new02</a>
+</ng-container> -->
+<!-- (value002)="getValue($event)" -->
+<!-- <app-new01 (value002)="getValue($event)"></app-new01>
+<app-new02 [inputdata]="value003"></app-new02> -->
+<!-- <h1>{{value003}}</h1> -->
+<!-- <button (click)="buttonCli($event)"></button> -->
+
+<div>
+  <!-- <router-outlet></router-outlet> -->
+</div> 
